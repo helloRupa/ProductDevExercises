@@ -1,0 +1,247 @@
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #b3b3b3;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+h1 {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+button, input[type="submit"], input[type="checkbox"], label {
+  cursor: pointer;
+}
+
+header {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  background-color: #4b4b4b;
+  color: #efefef;
+
+  div {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .metadata {
+    text-align: right;
+    font-size: 0.85em;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: inherit;
+}
+
+section {
+  width: 90%;
+  min-width: 250px;
+  max-width: 475px;
+  margin-bottom: 1em;
+  background-color: #fcfcfc;
+  box-sizing: inherit;
+  padding: 1em;
+  text-align: center;
+
+  h2 {
+    font-size: 1.25em;
+    color: #2c3e50;
+  }
+
+  button, input[type="submit"] {
+    padding: 0.5em;
+    min-width: 44px;
+    min-height: 44px;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #76d7f4;
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+
+.subheading {
+  margin-bottom: 1em;
+  font-size: 0.75em;
+  font-style: italic;
+  color: #4f5b68;
+}
+
+.content {
+  min-height: 50px;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  span {
+    font-size: 1.5em;
+  }
+}
+
+.todo {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    label {
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 0.9em;
+      padding: 0.5em;
+    }
+
+    input {
+      font-size: 1.25em;
+      padding: 0.25em;
+      border: 1px solid #ccc;
+      margin: 0 0 0.5em;
+    }
+
+    span {
+      font-size: 0.75em;
+      color: #bf0404;
+      padding: 0.5em;
+    }
+  }
+
+  ul {
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1em;
+      font-size: 1em;
+
+      button {
+        background-color: #f23535;
+        color: #fff;
+      }
+    }
+
+    input[type="checkbox"] {
+      width: 1.5em;
+      height: 1.5em;
+    }
+  }
+}
+
+.calculator {
+  .display {
+    text-align: right;
+    font-size: 2em;
+    border: 1px solid #6e6e6e;
+    padding: 0 0.25em;
+    margin-bottom: 0.5em;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.25em;
+    gap: 0.25em;
+    grid-template-areas: 
+      "c del del plus"
+      "one two three minus"
+      "four five six mult"
+      "seven eight nine divide"
+      "zero dec pos-neg equal";
+
+    .c {
+      grid-area: c;
+    }
+
+    .del {
+      grid-area: del;
+    }
+
+    .plus {
+      grid-area: plus;
+    }
+
+    .minus {
+      grid-area: minus;
+    }
+
+    .multiply {
+      grid-area: mult;
+    }
+
+    .divide {
+      grid-area: divide;
+    }
+
+    .equal {
+      grid-area: equal;
+    }
+
+    .one {
+      grid-area: one;
+    }
+
+    .two {
+      grid-area: two;
+    }
+
+    .three {
+      grid-area: three;
+    }
+
+    .four {
+      grid-area: four;
+    }
+
+    .five {
+      grid-area: five;
+    }
+
+    .six {
+      grid-area: six;
+    }
+
+    .seven {
+      grid-area: seven;
+    }
+
+    .eight {
+      grid-area: eight;
+    }
+
+    .nine {
+      grid-area: nine;
+    }
+
+    .zero {
+      grid-area: zero;
+    }
+
+    .decimal {
+      grid-area: dec;
+    }
+
+    .pos-neg {
+      grid-area: pos-neg;
+    }
+  }
+}
